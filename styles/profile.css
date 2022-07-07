@@ -1,0 +1,400 @@
+section {
+    display: flex;
+    padding-top: 110px;
+    padding-bottom: 110px;
+}
+
+#container {
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+}
+
+#left_bar {
+    display: flex;
+    flex-direction: column;
+    width: 350px
+}
+
+.content_section {
+    display: none;
+}
+
+.active_content_section {
+    display: block;
+}
+
+.left_bar_elem {
+    width: 100%;
+    height: 60px;
+    border: 1px solid #E4E4E4;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 60px;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    transition: 0.3s;
+}
+
+.selected_content_button {
+    border: none;
+    color: #fff;
+    background: url('/assets/img_catalog/catalog-nav-menu-listbg.png') no-repeat;
+    background-size: 100% 100%;
+}
+
+.selected_content_button span {
+    display: block;
+    background-color: rgba(29, 93, 181, 0.7);
+}
+
+.left_bar_elem span {
+    padding-left: 40px;
+    position: relative;
+    z-index: 2;
+}
+
+#content {
+    padding-left: 80px;
+    width: 780px;
+}
+
+#content .title P {
+    font-family: RFDewiExpanded;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 16px;
+    color: #2E344B;
+    margin-bottom: 15px;
+}
+
+#content .title span {
+    font-family: RFDewiExpanded;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 33px;
+    background: linear-gradient(269.96deg, #1A3286 0.05%, #1E83E0 47.93%, #1A3286 99.97%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+}
+
+#my_profile_bar {
+    margin-top: 70px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+#my_profile_bar button {
+    min-width: 150px;
+    height: 50px;
+    border: 1px solid #EB5829;
+    background-color: rgba(0, 0, 0, 0);
+    font-family: Montserrat;
+    font-weight: 700;
+    font-size: 12px;
+    color: #2E344B;
+    margin-right: 20px;
+}
+
+.my_profile_chapter {
+    margin-top: 70px;
+}
+
+.chapter_title {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.chapter_title span {
+    font-family: RFDewiExpanded;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 16px;
+    vertical-align: middle;
+}
+
+.correction {
+    width: 68px;
+    height: 25px;
+    background: #EB5829;
+    border-radius: 9px;
+    line-height: 25px;
+    text-align: center;
+    font-family: 'Montserrat';
+    font-weight: 700;
+    font-size: 9px;
+    color: #FFFFFF;
+    margin-left: 10px;
+}
+
+.chapter_text {
+    font-family: RFDewiExpanded;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 30px;
+    color: #2E344B;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+#company_info_bar {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.selected_button_c_info {
+    opacity: 1 !important;
+}
+
+.company_info_section {
+    margin-top: 60px;
+    display: none;
+}
+
+.active_company_info_section {
+    display: block;
+}
+
+#company_info_bar button {
+    font-family: RFDewiExpanded;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 16px;
+    color: #2E344B;
+    opacity: 0.3;
+    background-color: rgba(0, 0, 0, 0);
+    border: none;
+    padding: 0;
+    margin: 0;
+    margin-right: 40px;
+}
+
+#inputs {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+#inputs div {
+    display: flex;
+    flex-direction: column;
+    margin-right: 84px;
+}
+
+#inputs input,
+#inputs select {
+    background-color: rgba(0, 0, 0, 0);
+    color: rgba(46, 52, 75, 0.5);
+    width: 260px;
+    height: 40px;
+    font-size: 15px;
+    border: 1px solid rgba(46, 52, 75, 0.5);
+    border-top: 0px;
+    border-left: 0px;
+    border-right: 0px;
+    margin-bottom: 35px;
+}
+
+#inputs select {
+    width: 100px !important;
+    cursor: pointer;
+}
+
+#inputs input::-webkit-input-placeholder,
+#inputs input:focus::-webkit-input-placeholder,
+#inputs input:-moz-placeholder,
+#inputs input:focus:-moz-placeholder,
+#inputs input::-moz-placeholder,
+#inputs input:focus::-moz-placeholder,
+#inputs input:-ms-input-placeholder,
+#inputs input:focus:-ms-input-placeholder {
+    color: rgba(46, 52, 75, 0.5);
+    font-weight: 400;
+    font-size: 15px;
+}
+
+#form_bottom {
+    margin-top: 60px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.button {
+    width: 338px;
+    height: 80px;
+    background: #EB5829;
+    font-family: RFDewiExpanded;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 15px;
+    color: #fff;
+}
+
+#select_image {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-left: 50px;
+}
+
+#select_image img {
+    width: 50px;
+    margin-right: 25px;
+    box-shadow: 0px 14px 44px rgba(0, 0, 0, 0.15);
+    border-radius: 3px;
+}
+
+.file_input {
+    position: relative;
+    height: 40px;
+    cursor: pointer;
+}
+
+.file_input input {
+    position: absolute;
+    opacity: 0;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+}
+
+.file_input span {
+    font-family: RFDewiExpanded;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    text-decoration-line: underline;
+    color: #1D5DB5;
+    cursor: pointer;
+}
+
+#offices_text {
+    font-family: RFDewiExpanded;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 30px;
+    color: #2E344B;
+}
+
+#offices .button {
+    margin-top: 24px;
+}
+
+#parameters {
+    margin-top: 80px;
+}
+
+.parameter {
+    font-family: RFDewiExpanded;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 15px;
+    line-height: 30px;
+    color: #2E344B;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+@media (max-width: 1170px) and (min-width: 1140px) {
+    #content {
+        padding-left: 50px;
+        width: 740px;
+    }
+}
+
+@media (max-width: 1140px) {
+    #container {
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+    }
+
+    #left_bar {
+        width: 100%;
+        max-width: 800px;
+    }
+
+    #content {
+        padding: 0;
+        width: 100%;
+        margin-top: 50px;
+        display: flex;
+        justify-content: center;
+    }
+
+    #company_info_bar {
+        justify-content: center;
+    }
+
+    #company_info_bar button {
+        padding: 0;
+        margin-left: 20px;
+        margin-right: 20px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    #company_info_bar {
+        align-items: center;
+    }
+
+    #inputs div {
+        margin-right: 42px;
+        margin-left: 42px;
+    }
+
+    #inputs {
+        justify-content: center;
+    }
+
+    #form_bottom {
+        justify-content: center;
+    }
+
+    #form_bottom button {
+        order: 2;
+    }
+
+    #select_image {
+        margin: 0;
+        margin-bottom: 20px;
+    }
+
+    #content .title {
+        text-align: center;
+    }
+
+    #my_profile_bar {
+        align-items: center;
+        justify-content: center;
+    }
+
+    #my_profile_bar button {
+        margin-right: 10px;
+        margin-left: 20px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    .my_profile_chapter {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+}

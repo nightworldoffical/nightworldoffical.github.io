@@ -1,0 +1,935 @@
+#authorization {
+    position: fixed;
+    height: 100vh;
+    width: 100%;
+    background: rgba(229, 229, 229, 0.5);
+    z-index: 2022;
+    backdrop-filter: blur(5px);
+    display: none;
+}
+
+#authorization div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+}
+
+#authorization div img {
+    width: 80%;
+    margin: 100px 0 0 0;
+}
+
+#authorization div img:nth-child(2) {
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    top: 10px;
+    left: 60px;
+}
+
+#authorization div p:nth-child(3) {
+    position: absolute;
+    color: #2E344B;
+    font-weight: bold;
+    text-align: center;
+    letter-spacing: 0.02em;
+    line-height: 25px;
+    font-family: RFDewiExpanded;
+    background: linear-gradient(269.96deg, #1A3286 0.05%, #1E83E0 47.93%, #1A3286 99.97%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+    padding: 0 20px 0 0;
+}
+
+#authorization div input:nth-child(4) {
+    position: absolute;
+    margin: 100px 0 0 0;
+    border: 0;
+    border-bottom: 1px solid #2E344B;
+    font-family: RFDewiExpanded;
+    outline: 0;
+    background: transparent;
+    font-size: 0.6em;
+    padding: 0 0 5px 0;
+    color: #2E344B;
+}
+
+#authorization div input:nth-child(5) {
+    position: absolute;
+    margin: 150px 0 0 0;
+    border: 0;
+    border-bottom: 1px solid #2E344B;
+    font-family: RFDewiExpanded;
+    outline: 0;
+    background: transparent;
+    font-size: 0.6em;
+    padding: 0 0 5px 0;
+    color: #2E344B;
+}
+
+hr {
+    background: linear-gradient(269.96deg, #1A3286 0.05%, #1E83E0 47.93%, #1A3286 99.97%);
+    height: 2px;
+    border: 0;
+}
+
+.header {
+    height: 240px;
+    border-bottom: 1px solid #E4E4E4;
+    background-color: #fff;
+}
+
+.header .container {
+    margin: auto;
+    height: 100%;
+    display: flex;
+    width: 90%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.header .logoDescription {
+    display: flex;
+    align-items: center;
+}
+
+.header .logoDescription img {
+    width: 43.67px;
+    height: 43.67px;
+}
+
+.header .logoDescription p {
+    width: 116.24px;
+    line-height: 12.38px;
+    color: #2E344B;
+    margin: 0 0 0 15px;
+    font-family: Montserrat;
+    font-size: 0.57em;
+}
+
+.header .logoWrapper {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.header .btnWrapper {
+    display: flex;
+}
+
+.header .btnWrapper button {
+    border: 0;
+    height: 66px;
+    cursor: pointer;
+    font-size: 0.58em;
+    height: 41.25px;
+    font-family: Montserrat;
+    width: 100%;
+    justify-content: center;
+}
+
+.header .btnWrapper button:nth-child(1) {
+    background: #1D5DB5;
+    color: #fff;
+}
+
+.header .btnWrapper button:nth-child(1):hover {
+    transition: 0.4s;
+    background: #236cd3;
+}
+
+.header .btnWrapper button:nth-child(2) {
+    border: 1px solid #1D5DB5;
+    color: #1D5DB5;
+    background: #fff;
+}
+
+.header .btnWrapper button:nth-child(2):hover {
+    transition: 0.4s;
+    background: rgb(241, 241, 241);
+}
+
+.header .colWrap .col1,
+.header .colWrap .col2,
+.header .colWrap .col3 {
+    width: 35px;
+    height: 1px;
+    background-color: #000;
+    margin: 7px 0;
+    transition: 0.4s;
+}
+
+.navigation {
+    position: absolute;
+    top: 100px;
+    width: 100%;
+    background: #fff;
+    display: none;
+    padding: 0 0 60px 0;
+    z-index: 50;
+}
+
+.navigation .container {
+    width: 90%;
+    margin: auto;
+    min-height: 100%;
+}
+
+.navigation .container ul li a {
+    min-height: 100%;
+    display: flex;
+    align-items: center;
+    color: #2E344B;
+    font-family: RFDewiExpanded;
+    font-size: 1em;
+    text-align: center;
+}
+
+.navigation .container ul {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    height: 100%;
+}
+
+.navigation .container ul li ul li a {
+    font-family: Montserrat;
+    font-size: 0.9em;
+}
+
+.navigation .container ul li ul li {
+    margin: 30px 0 0 0;
+}
+
+.navigation .container ul li a:not(nav .container ul li:nth-child(1) .catalogSubMenu li a) {
+    display: block;
+}
+
+.navigation .catalogSubMenu {
+    background: #F6F6F6;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    z-index: 50;
+}
+
+.navigation .container ul li ul {
+    background: #FCFCFC;
+    margin: 10px 0 0 0;
+    padding: 0 0 20px 0;
+}
+
+.navigation .container ul li ul li a:hover {
+    color: #4392ff;
+}
+
+.navigation .container ul li div div {
+    font-size: 0.9em;
+    border: 1px solid #1A3286;
+    padding: 5px;
+}
+
+.navigation .container ul li:nth-child(1) .catalogSubMenu {
+    background-color: #FCFCFC;
+    padding: 15px 30px 15px 30px;
+    margin: 20px 0 0 0;
+    min-width: 250px;
+    display: none;
+}
+
+.navigation .container ul li a {
+    min-height: 100%;
+    display: flex;
+    align-items: center;
+    color: #2E344B;
+    font-family: RFDewiExpanded;
+    font-size: 1em;
+    text-align: center;
+}
+
+.navigation .container ul li {
+    height: 100%;
+    margin: 50px 0 0 0;
+}
+
+.navigation .container ul li div div {
+    font-size: 0.9em;
+    border: 1px solid #1A3286;
+    padding: 5px;
+    position: relative;
+    left: 30px;
+    cursor: pointer;
+}
+
+.navigation .container ul li div {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.header .btnWrapper button {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.header .btnWrapper button svg {
+    margin-right: 5px;
+}
+
+#account_button {
+    justify-content: flex-start;
+    position: relative;
+    align-items: flex-start;
+    flex-direction: column;
+}
+
+#account_button_content {
+    position: relative;
+    z-index: 999999999999999;
+    min-width: 100%;
+    min-height: 100%;
+    max-width: 100%;
+    max-height: 100%;
+    display: flex;
+    align-items: center;
+    text-transform: uppercase;
+}
+
+#account_button svg {
+    margin-left: 15px;
+}
+
+#account_button_arrow {
+    margin-left: 35px !important;
+}
+
+#account_button:hover #account_button_menu {
+    visibility: visible;
+    opacity: 1;
+}
+
+#account_button_menu {
+    width: 100%;
+    background-color: #236cd3;
+    z-index: 999999999;
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.3s;
+}
+
+.account_button_menu_elem {
+    display: flex;
+    flex-direction: row;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    font-size: 10px;
+    align-items: center;
+    transition: 0.3s;
+}
+
+.account_button_menu_elem:hover {
+    color: #d8d8d8;
+}
+
+@media (min-width: 280px) {
+    .header .btnWrapper button:nth-child(1) {
+        width: 100px;
+    }
+
+    .header .btnWrapper button:nth-child(2) {
+        width: 150px;
+    }
+
+    #authorization div p:nth-child(3) {
+        font-size: 0.7em;
+        margin: 40px 0 0 0;
+    }
+
+    #authorization div button {
+        width: 155px;
+        border: 0;
+        background: #EB5829;
+        color: #fff;
+        height: 30px;
+        margin: 220px 0 0 0;
+        cursor: pointer;
+        font-family: RFDewiExpanded;
+        font-size: 0.5em;
+        position: absolute;
+    }
+
+    #authorization div button:hover {
+        transition: 0.4s;
+        background: #f36738;
+    }
+
+    #authorization div .rememberForget {
+        position: absolute;
+        margin: 300px 0 0 0;
+        flex-direction: row;
+        font-size: 0.8em;
+        justify-content: space-between;
+        width: 65%;
+    }
+
+    #authorization div .rememberForget div {
+        flex-direction: row;
+        align-items: center;
+        padding: 5px 0 0 0;
+        cursor: pointer;
+    }
+
+    #authorization div .rememberForget div input {
+        width: 14px;
+        height: 14px;
+    }
+
+    #authorization div .rememberForget div label {
+        padding: 3px 0 0 5px;
+        color: #2E344B;
+        font-family: RFDewiExpanded;
+        font-size: 0.7em;
+        cursor: pointer;
+    }
+
+    #authorization div .rememberForget a {
+        padding: 7px 0 0 0;
+        text-decoration: underline;
+        text-underline-offset: 1px;
+        color: #2E344B;
+        font-family: RFDewiExpanded;
+        font-size: 0.7em;
+    }
+
+    .navigation .container ul li:nth-child(1) .catalogSubMenu {
+        padding-bottom: 40px;
+    }
+}
+
+@media (min-width: 360px) {
+    .header .btnWrapper button:nth-child(1) {
+        width: 128.12px;
+    }
+
+    .header .btnWrapper button:nth-child(2) {
+        width: 171.88px;
+    }
+
+    .header .logoDescription p {
+        font-size: 0.65em;
+        width: 130px;
+    }
+}
+
+@media (min-width: 375px) {
+    #authorization div p:nth-child(3) {
+        font-size: 1em;
+        margin: 0;
+    }
+
+    #authorization div .rememberForget {
+        width: 58%;
+    }
+}
+
+@media (min-width: 390px) {
+    #authorization div img:nth-child(2) {
+        top: 16px;
+        left: 90px;
+        width: 100px;
+        height: 100px;
+    }
+}
+
+@media (min-width: 412px) {
+    #authorization div p:nth-child(3) {
+        font-size: 1.2em;
+    }
+
+    #authorization div input:nth-child(4) {
+        width: 45%;
+    }
+
+    #authorization div input:nth-child(5) {
+        margin: 160px 0 0 0;
+        width: 45%;
+    }
+
+    #authorization div button {
+        margin: 250px 0 0 0;
+        height: 40px;
+        width: 45%;
+    }
+
+    #authorization div .rememberForget {
+        margin: 350px 0 0 0;
+    }
+}
+
+@media (min-width: 540px) {
+    #authorization div p:nth-child(3) {
+        font-size: 1.4em;
+        margin: -50px 0 0 0;
+    }
+
+    #authorization div .rememberForget {
+        width: 50%;
+    }
+}
+
+@media (min-width: 768px) {
+    .header .logoWrapper {
+        justify-content: space-around;
+    }
+
+
+    #authorization div img {
+        width: 400px;
+        height: 450px;
+    }
+
+    #authorization div img:nth-child(2) {
+        top: 18px;
+        left: 240px;
+        width: 120px;
+        height: 120px;
+    }
+
+    #authorization div input:nth-child(4) {
+        width: 30%;
+    }
+
+    #authorization div input:nth-child(5) {
+        width: 30%;
+        margin: 170px 0 0 0;
+    }
+
+    #authorization div button {
+        width: 30%;
+        margin: 300px 0 0 0;
+    }
+
+    #authorization div .rememberForget {
+        margin: 420px 0 0 0;
+        width: 33%;
+    }
+}
+
+@media (min-width: 820px) {
+    #authorization div img:nth-child(2) {
+        top: 20px;
+        left: 280px;
+    }
+}
+
+@media (min-width: 912px) {
+    #authorization div img:nth-child(2) {
+        top: 20px;
+        left: 320px;
+    }
+}
+
+@media (min-width: 1024px) {
+    .header {
+        height: 170px;
+    }
+
+    .header .colWrap {
+        display: none;
+    }
+
+    .header .container {
+        width: 1000px;
+        flex-direction: row;
+    }
+
+    .header .logoWrapper {
+        display: block;
+    }
+
+    .header .logoDescription img {
+        width: 85.7px;
+        height: 85.7px;
+    }
+
+    .header .logoDescription p {
+        font-size: 0.9em;
+        width: 180px;
+        line-height: 24.3px;
+        margin: 0 0 0 40px;
+    }
+
+    .header .btnWrapper button {
+        font-size: 0.8em;
+        height: 50px;
+    }
+
+    .header .btnWrapper button:nth-child(1) {
+        width: 155px;
+    }
+
+    .header .btnWrapper button:nth-child(2) {
+        width: 225px;
+    }
+
+    .navigation {
+        height: 70px;
+        position: static;
+        padding: 0;
+        display: block;
+    }
+
+    .navigation .container {
+        width: 1000px;
+        height: 100%;
+    }
+
+    .navigation .container ul {
+        justify-content: space-between;
+        flex-direction: row;
+    }
+
+    .navigation .container ul li {
+        height: 100%;
+        margin: 50px 0 0 0;
+    }
+
+    .navigation .container ul li ul {
+        position: relative;
+    }
+
+    .navigation .container ul li:nth-child(1) .catalogSubMenu {
+        padding-bottom: 15px;
+    }
+
+    .navigation .container ul li:nth-child(1) .catalogSubMenu {
+        position: absolute;
+        left: 0;
+        top: 65px;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        height: auto;
+        margin: 5px 0 0 0;
+        width: 190px;
+        padding: 5px 20px;
+    }
+
+    .navigation .container ul li:nth-child(1):hover .catalogSubMenu {
+        display: block;
+    }
+
+    .navigation .container ul li:nth-child(1) .catalogSubMenu li {
+        margin: 10px 0 0 0;
+        padding: 5px 0;
+    }
+
+    .navigation .container ul li:nth-child(1) .catalogSubMenu li a:hover {
+        color: #1e4379;
+        font-weight: bold;
+        padding: 0 0 0 5px;
+        -webkit-transition: 0.2s;
+        transition: 0.2s;
+    }
+
+    .navigation .container ul li:nth-child(1) .catalogSubMenu li a::after {
+        height: 0;
+    }
+
+    .navigation .container ul li {
+        position: relative;
+        margin: 0;
+    }
+
+    .navigation .container ul li a {
+        display: inline-block;
+        position: relative;
+        padding: 30px 0 0 0;
+        font-size: 0.9em;
+    }
+
+    .navigation .container ul li a:after {
+        background: none repeat scroll 0 0 transparent;
+        bottom: 0;
+        content: "";
+        display: block;
+        height: 3px;
+        left: 50%;
+        position: absolute;
+        background: #1D5DB5;
+        transition: width 0.3s ease 0s, left 0.3s ease 0s;
+        width: 0;
+    }
+
+    .navigation .container ul li a:hover:after {
+        width: 100%;
+        left: 0;
+    }
+
+    .navigation .container ul li div {
+        height: 100%;
+    }
+
+    .navigation .container ul li div div {
+        display: none;
+    }
+
+    .navigation .container ul li ul {
+        flex-direction: column;
+        background: #fff;
+        width: 240px;
+        margin: 0px 0 0 29px;
+        height: auto;
+        padding: 10px 0px 10px 20px;
+        align-items: flex-start;
+    }
+
+    .navigation .container ul li ul li a {
+        padding: 0;
+    }
+
+    .navigation .container ul li ul li a::after {
+        height: 0px;
+    }
+
+    .navigation .container ul li ul li {
+        margin: 10px 0 0 0;
+    }
+
+    #authorization div img {
+        width: 450px;
+        height: 500px;
+        margin: 70px 0 0 0;
+    }
+
+    #authorization div img:nth-child(2) {
+        top: 20px;
+        left: 350px;
+        width: 150px;
+        height: 150px;
+    }
+
+    #authorization div p:nth-child(3) {
+        font-size: 1.8em;
+    }
+
+    #authorization div input:nth-child(4) {
+        width: 22%;
+        font-size: 0.9em;
+    }
+
+    #authorization div input:nth-child(5) {
+        width: 22%;
+        font-size: 0.9em;
+        margin: 180px 0 0 0;
+    }
+
+    #authorization div button {
+        width: 22%;
+        margin: 320px 0 0 0;
+        height: 60px;
+    }
+
+    #authorization div .rememberForget {
+        margin: 450px 0 0 0;
+        width: 24%;
+        font-size: 1em;
+    }
+
+    #authorization div .rememberForget div input {
+        width: 20px;
+        height: 20px;
+    }
+}
+
+@media (min-width: 1280px) {
+    #authorization div img:nth-child(2) {
+        top: 20px;
+        left: 515px;
+    }
+
+    #authorization div p:nth-child(3) {
+        font-size: 2em;
+    }
+
+    #authorization div input:nth-child(4) {
+        width: 22%;
+        font-size: 0.9em;
+    }
+
+    #authorization div input:nth-child(5) {
+        width: 22%;
+        font-size: 0.9em;
+        margin: 180px 0 0 0;
+    }
+
+    #authorization div button {
+        width: 22%;
+        margin: 320px 0 0 0;
+        font-size: 1em;
+    }
+
+    #authorization div .rememberForget {
+        margin: 450px 0 0 0;
+        width: 25%;
+        font-size: 1.2em;
+    }
+}
+
+@media (min-width: 1680px) {
+    .header .container {
+        width: 1200px;
+    }
+
+    .header .btnWrapper button {
+        font-size: 0.93em;
+        height: 66px;
+    }
+
+    .header .btnWrapper button:nth-child(1) {
+        width: 205px;
+    }
+
+    .header .btnWrapper button:nth-child(2) {
+        width: 275px;
+    }
+
+    .header .logoDescription p {
+        font-size: 1.125em;
+        width: 230px;
+    }
+
+    .navigation .container {
+        width: 1200px;
+    }
+
+    #authorization div img {
+        width: 600px;
+        height: 680px;
+        margin: 130px 0 0 0;
+    }
+
+    #authorization div img:nth-child(2) {
+        top: 28px;
+        left: 795px;
+        width: 200px;
+        height: 200px;
+    }
+
+    #authorization div input:nth-child(5) {
+        margin: 220px 0 0 0;
+    }
+
+    #authorization div button {
+        margin: 380px 0 0 0;
+        height: 80px;
+    }
+
+    #authorization div .rememberForget {
+        margin: 580px 0 0 0;
+        width: 24%;
+    }
+}
+
+/*---*/
+
+@media (min-width: 280px) {
+    #authorization div img:nth-child(2) {
+        height: auto;
+        transform: rotate(12deg);
+        top: 18px;
+    }
+}
+
+@media (min-width: 412px) {
+    #authorization div img:nth-child(2) {
+        top: 25px;
+    }
+}
+
+@media (min-width: 540px) {
+    #authorization div img:nth-child(2) {
+        top: 32px;
+        left: 130px;
+        width: 110px;
+    }
+}
+
+@media (min-width: 768px) {
+    #authorization div img:nth-child(2) {
+        top: 28px;
+        left: 240px;
+    }
+}
+
+@media (min-width: 820px) {
+    #authorization div img:nth-child(2) {
+        left: 260px;
+    }
+}
+
+@media (min-width: 912px) {
+    #authorization div img:nth-child(2) {
+        top: 24px;
+        left: 290px;
+    }
+}
+
+@media (min-width: 1024px) {
+    #authorization div img:nth-child(2) {
+        top: 26px;
+        left: 320px;
+        width: 140px;
+    }
+}
+
+@media (min-width: 1280px) {
+    #authorization div img:nth-child(2) {
+        top: 28px;
+        left: 450px;
+    }
+}
+
+@media (min-width: 1366px) {
+    #authorization div img:nth-child(2) {
+        top: 28px;
+        left: 500px;
+    }
+}
+
+@media (min-width: 1440px) {
+    #authorization div img:nth-child(2) {
+        top: 32px;
+        left: 550px;
+    }
+}
+
+@media (min-width: 1536px) {
+    #authorization div img:nth-child(2) {
+        top: 30px;
+        left: 580px;
+    }
+}
+
+@media (min-width: 1600px) {
+    #authorization div img:nth-child(2) {
+        left: 620px;
+    }
+}
+
+@media (min-width: 1920px) {
+    #authorization div img:nth-child(2) {
+        top: 36px;
+        left: 760px;
+        width: 180px;
+    }
+}

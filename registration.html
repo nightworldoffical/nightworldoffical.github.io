@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link href="styles/header.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles/global.css">
+    <link href="styles/footer.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/registration.css">
+</head>
+
+<body>
+    <div id="authorization">
+        <div id="authWrap">
+            <img src="assets/img/auth.png" alt="auth">
+            <img src="assets/img/authImg.png" alt="authImg">
+            <p>АВТОРИЗАЦИЯ</p>
+            <input type="text" placeholder="E-mail" />
+            <input type="password" placeholder="Пароль" />
+            <button>ВОЙТИ</button>
+            <div class="rememberForget">
+                <div>
+                    <input id="remember" type="radio" /><label for="remember">Запомнить</label>
+                </div>
+                <a href="#">Забыли пароль</a>
+            </div>
+        </div>
+    </div>
+    <header class="header">
+        <div class="container">
+            <div class="logoWrapper">
+                <div class="logoDescription">
+                    <a href="/"><img src="assets/ico/logo.png" alt="logo"></a>
+                    <p>Трубы, арматура, метизы, металлопрокат, металлолом</p>
+                </div>
+                <div class="colWrap">
+                    <div class="col1"></div>
+                    <div class="col2"></div>
+                    <div class="col3"></div>
+                </div>
+            </div>
+            <div class="btnWrapper">
+                <button>ВОЙТИ</button>
+                <button onclick="location.pathname='/registration.html'">ЗАРЕГИСТРИРОВАТЬСЯ</button>
+            </div>
+        </div>
+    </header>
+    <nav class="navigation">
+        <div class="container">
+            <ul>
+                <li>
+                    <div>
+                        <a href="catalog.html">Каталог компаний</a>
+                        <div>▼</div>
+                    </div>
+                    <ul class="catalogSubMenu">
+                        <li><a href="#">ГЛАВНАЯ — </a></li>
+                        <li><a href="#">АНАЛИТИКА —</a></li>
+                        <li><a href="#">НОВОСТИ КОМПАНИЙ</a></li>
+                        <li><a href="#">НАЗВАНИЕ СТАТЬИ</a></li>
+                    </ul>
+                </li>
+                <li><a href="price-list.html">Прайс-листы поставщиков</a></li>
+                <li><a href="application.html">Заявки</a></li>
+                <li><a href="private-ads.html">Частные объявления</a></li>
+                <li><a href="analytics.html">Аналитика</a></li>
+            </ul>
+        </div>
+    </nav>
+    <section id="introduction">
+        <div class="container">
+            <div>
+                <div>
+                    <h1>РЕГИСТРАЦИЯ КОМПАНИИ</h1>
+                    <p>После регистрации обязательно <span>пройдите по ссылке в полученном письме,</span> иначе запись
+                        будет неактивна!</p>
+                    <button>ЗАРЕГИСТРИРОВАТЬСЯ</button>
+                </div>
+                <div>
+                    <div class="img"></div>
+                </div>
+            </div>
+            <div class="instructionWrap">
+                <div>
+                    <p>КАК ПОЛУЧИТЬ КЛИЕНТОВ?</p>
+                    <img src="assets/img/arrow.png" alt="arrow">
+                </div>
+                <div>
+                    <p>1</p>
+                    <img src="assets/img/mouse.png" alt="mouse" />
+                    <span>Зарегист-
+                        рируйтесь</span>
+                </div>
+                <div>
+                    <p>2</p>
+                    <span>Заполните информацию о компании</span>
+                </div>
+                <div>
+                    <p>3</p>
+                    <img src="assets/img/trinket.png" alt="trinket.png" />
+                    <span>Добавьте товары</span>
+                </div>
+                <div>
+                    <p>4</p>
+                    <span>Получайте заявки потребителей
+                    </span>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="form">
+        <div class="container">
+            <h1>РЕГИСТРАЦИЯ</h1>
+            <form action="">
+                <div>
+                    <input id="company" placeholder="Компания" type="text" />
+                    <input id="ooo" placeholder="OOO" type="text" />
+                    <img src="assets/ico/arrow.png" alt="arrow" />
+                </div>
+                <input placeholder="Ваше имя" type="text" />
+                <input placeholder="Электронная почта" type="email" />
+                <div>
+                    <input placeholder="Пароль" type="password" />
+                    <input placeholder="Подтверждения пароля" type="password" />
+                </div>
+                <div id="capture">
+                    <div>
+                        <p>Введите код с картинки</p>
+                        <div></div>
+                    </div>
+                    <input type="text" />
+                </div>
+
+                <button type="submit">ЗАРЕГИСТРИРОВАТЬСЯ</button>
+            </form>
+        </div>
+    </section>
+    <div class="footer">
+        <div class="container">
+            <div class="footer__inner">
+                <div class="footer__logo">
+                    <a class="footer__logo-link" href="#">
+                        <img class="footer__img" src="assets/ico/logoFooter.jpg" alt="footer logo">
+                    </a>
+                    <div class="footer__logo-text">
+                        <a class="footer__logo-link-one" href="#">© 2009-2022 Труба24.ру</a>
+                        <p>При использовании материалов гиперссылка на портал Труба24.ру обязательна</p>
+                    </div>
+                </div>
+                <div class="footer__info">
+                    <div class="footer__nav">
+                        <ul class="footer__menu">
+                            <li class="footer__menu-list">
+                                <a class="footer__menu-link" href="#">о компании</a>
+                            </li>
+                            <li class="footer__menu-list">
+                                <a class="footer__menu-link" href="#">медийная реклама</a>
+                            </li>
+                            <li class="footer__menu-list">
+                                <a class="footer__menu-link" href="#">услуги</a>
+                            </li>
+                            <li class="footer__menu-list">
+                                <a class="footer__menu-link" href="#">клиенты</a>
+                            </li>
+                            <li class="footer__menu-list">
+                                <a class="footer__menu-link" href="#">контакты</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="footer__bottom">
+                        <div class="footer__rights">
+                            <a class="footer__rights-text" href="#">Политика конфиденциальности</a>
+                            <a class="footer__rights-text" href="#">Пользовательское соглашение</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="scripts/jquery-3.6.0.min.js"></script>
+    <script src="scripts/script.js"></script>
+    <script src="scripts/menu.js"></script>
+</body>
+
+</html>
